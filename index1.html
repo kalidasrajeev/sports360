@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
   <style>
   @font-face 
   {
@@ -32,8 +33,7 @@
   body
   {
     font-family: Product;
-    background: black;
-    color: white;
+    color: black;
   }
   #head1
   {
@@ -152,8 +152,8 @@ z-index: 999999;
 .spinner
 {
   position: absolute;
-top: 18%;
-left: 38%;
+top: 38%;
+left: 40%;
 }
   </style>
 </head>
@@ -162,20 +162,17 @@ left: 38%;
   <!--CSS Spinner-->
 <div class="spinner-wrapper">
     <div class="spinner">
-        <video autoplay muted loop>
-            <source src="loader.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>       
+      <div id="container" style="color:black;font-family: 'Bangers', cursive;font-size: 60px;"></div>      
     </div>
-    </div>
+</div>
   <nav class="black flat" role="navigation">
     <div class="nav-wrapper">
       <a id="logo-container" href="#" class="brand-logo right" style="color:white;">Logo</a>
       <ul class="left hide-on-med-and-down" style="color:white;">
-        <li><a href="index1.html" style="color:white;font-family:Circular;">Home</a></li>
+        <li><a href="index1.html" style="color:white;font-family:Circular;">Home</a></li      >
         <li><a href="contact-us1.html" style="color:white;font-family:Circular;">Contact Us</a></li>
         <li><a href="about-us1.html" style="color:white;font-family:Circular;">About Us</a></li>
-        <li><a href="#" style="color:white;font-family:Circular;">Support</a></li>
+        <li><a href="feedback.html" style="color:white;font-family:Circular;">Feedback</a></li>
         <li><a href="enquiry1.html" style="font-family:Circular;"><span style="background:#ffb300;padding:10px 10px 10px 10px;color:black;">ENQUIRY</span></a></li>
       </ul>
 
@@ -195,7 +192,7 @@ left: 38%;
   <div class="slider">
       <ul class="slides">
         <li>
-          <img src="slide1.jpg"> <!-- random image -->
+          <img src=""> <!-- random image -->
           <div class="caption center-align">
             <h3>SPORTS 360</h3>
             <h5 class="light grey-text text-lighten-3">Here's our tagline.</h5>
@@ -235,7 +232,7 @@ left: 38%;
     <div class="container">
         <div class="section">
           <div class="row center">
-          <h4 style="font-family: bledug;color:white;">PRODUCTS</h4>
+          <h4 style="font-family: bledug;">RECOMMENDED FOR YOU</h4>
           </div>
           <!--   Icon Section   -->
           <div style="margin-top:25px;" class="row">
@@ -282,11 +279,12 @@ left: 38%;
   <div class="container">
     <div class="section">
       <div class="row center">
-      <h4 style="font-family: bledug;color:white;">OUR SERVICES</h4>
+      <h4 style="font-family: bledug;">OUR SERVICES</h4>
       </div>
       <!--   Icon Section   -->
-      <div style="margin-top:25px;" class="row">
-        <div class="col s12 m3">
+      <div style="margin-top:25px;display: flex;">
+        
+        <div style="width:24%;" class="center">
           <div class="icon-block">
               <div class="hvrbox">
               <img class="hvrbox-layer_bottom" src="service1.jpg" alt="Unsplashed background img 1">
@@ -295,15 +293,11 @@ left: 38%;
               </div></a>
               </div>
              
-            <h5 style="font-family: bledug;font-size:28px;">SCHOOLS AND COLLEGES</h5>
-            <div ><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">UNIFORM SHOES</span></div>
-            <div style="margin-top: 5px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">JERSEYS</span></div>
-            <div style="margin-top: 5px;margin-bottom: 15px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">SPORTS EQUIPMENTS</span></div>  
-            
+            <h6 style="font-family: bledug;font-size:24px;">SPORTS 360 FOR SCHOOLS</h6>
           </div>
         </div>
 
-        <div class="col s12 m3">
+        <div style="width:24%;" class="center">
           <div class="icon-block">
                 <div class="hvrbox">
                 <img class="hvrbox-layer_bottom" src="service2.jpg" alt="Unsplashed background img 1">
@@ -311,13 +305,11 @@ left: 38%;
                   <div class="hvrbox-text">view more</div>
                 </div></a>
                 </div>
-            <h5 style="font-family: bledug;font-size:28px;">CORPERATE</h5>
-            <div style="margin-top: 40px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">MERCHANDISE</span></div>
-            <div style="margin-top:5px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">NON-MERCHANDISE</span></div>
+            <h6 style="font-family: bledug;font-size:24px;">SPORTS 360 FOR CORPORATE</h6>
           </div>
         </div>
 
-        <div class="col s12 m3">
+        <div style="width:24%;" class="center">
           <div class="icon-block">
                 <div class="hvrbox">
                 <img class="hvrbox-layer_bottom" src="service3.jpg" alt="Unsplashed background img 1">
@@ -325,13 +317,11 @@ left: 38%;
                   <div class="hvrbox-text">view more</div>
                 </div></a>
                 </div>
-            <h5 style="font-family: bledug;font-size:28px;">Clubs & ACADEMIES</h5>
-            <div style="margin-top: 5px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">JERSEYS</span></div>
-            <div style="margin-top: 5px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">SPORTS EQUIPMENTS</span></div>
-          </div>
+            <h6 style="font-family: bledug;font-size:24px;">SPORTS 360 FOR CLUBS</h6>
+            </div>
         </div>
         
-        <div class="col s12 m3">
+        <div style="width:24%;" class="center">
             <div class="icon-block">
                   <div class="hvrbox">
                   <img class="hvrbox-layer_bottom" src="service2.jpg" alt="Unsplashed background img 1">
@@ -339,19 +329,30 @@ left: 38%;
                     <div class="hvrbox-text">view more</div>
                   </div></a>
                   </div>
-              <h5 style="font-family: bledug;font-size:28px;">PROJECT MANAGEMENT</h5>
-              <div style="margin-bottom: 5px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">BUILD & INSTALL</span></div>
-              <div style="margin-bottom: 5px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">GROUND TURFING</span></div>
-              <div style="margin-bottom: 5px;"><span style="color:black;background:#ffb300;padding:2px 10px 2px 10px;">BASKETBALL COURT</span></div>
+              <h6 style="font-family: bledug;font-size:24px;">SPORTS 360 FOR WHOLESALERS</h6>
             </div>
           </div>
+
+          <div style="width:24%;" class="center">
+            <div class="icon-block">
+                  <div class="hvrbox">
+                  <img class="hvrbox-layer_bottom" src="service2.jpg" alt="Unsplashed background img 1">
+                  <a href="project.html"><div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">view more</div>
+                  </div></a>
+                  </div>
+              <h6 style="font-family: bledug;font-size:24px;">SPORTS 360 FOR RETAILERS</h6>
+            </div>
+          </div>
+
       </div>
 
     </div>
   </div>
-
-
-  <div class="parallax-container valign-wrapper">
+  
+  <br><br>
+  
+  <div  class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -373,10 +374,8 @@ left: 38%;
             <br> Address: XXXXXXXXX</p>  
         </div>
       </div>
-
-    </div>
+    </div>    
   </div>
-
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -411,14 +410,14 @@ left: 38%;
     </div>
   
     <div class="wrapper">
-      <div class="slide"><i class="material-icons" style="font-size:32px;position: relative;top:3px;">call</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:16px;position:relative;bottom:6px;">+91 8360271989</span></div>
+      <a style="color:black;" href="https://wa.me/15551234567?text=I'm%20interested%20in%20your%20car%20for%20sale"><div class="slide"><i class="material-icons" style="font-size:32px;position: relative;top:3px;">call</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:16px;position:relative;bottom:6px;">+91 8360271989</span></div></a>
     </div>
 
     <div class="wrapper1">
         <div class="slide1"><i class="material-icons" style="font-size:32px;position: relative;top:3px;">book</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:16px;position:relative;bottom:6px;">CATALOG</span></div>
       </div>
 
-  <footer class="page-footer grey darken-4">
+  <footer class="page-footer black">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -437,9 +436,9 @@ left: 38%;
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><img style="width:20px;" src="facebook.png"><a style="padding:10px;" class="white-text" href="#!">Facebook</a></li>
-            <li><img style="width:20px;" src="instagram.png"><a style="padding:10px;"class="white-text" href="#!">Instagram</a></li>
-            <li><img style="width:20px;" src="linkedin.png"><a style="padding:10px;" class="white-text" href="#!">LinkedIn</a></li>
+            <li><img style="width:40px;padding:4px;" src="facebook.png"><img style="width:40px;padding:4px;" src="instagram.png"><img style="width:40px;padding:4px;" src="linkedin.png"><img style="width:40px;padding:4px;" src="youtube.png"></li>
+            <li></li>
+            <li></li>
           </ul>
         </div>
       </div>
@@ -458,19 +457,36 @@ left: 38%;
   <script src="js/init.js"></script>
   <script>
    $(document).ready(function(){
-    $('.slider').slider();
+    $('.slider').slider(); 
+  });  
+  </script>
+  <script>
+  jQuery(window).load(function () {
     
-    $(window).on("load", function() {
-      preloaderFadeOutTime = 4000;
-      function hidePreloader() {
-      var preloader = $('.spinner-wrapper');
-      preloader.fadeOut(preloaderFadeOutTime);
-      }
-      hidePreloader();
+    $('.spinner-wrapper')
+    .delay(2400)
+    .queue(function (next) { 
+      $(this).css('display', 'none'); 
+      next(); 
     });
   });
-  
   </script>
+  <script>
+    var text = 'BEYOND LIMITS';
+
+     var chars = text.split('');
+     var container = document.getElementById("container");
+     
+     var i = 0;
+     setInterval(function () {
+         if (i < chars.length) {
+             container.innerHTML += chars[i++];
+         } else {
+             i = 0;
+             container.innerHTML = "";
+         }
+     }, 100);
+    </script>
 
   </body>
 </html>

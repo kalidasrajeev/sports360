@@ -70,7 +70,7 @@
            text-indent: 15px;
           }        
           ::placeholder {
-             color: grey; /* Firefox */
+           color: grey; /* Firefox */
            }
   </style>
 </head>
@@ -91,27 +91,36 @@
        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons" >menu</i></a>
      </div>
    </nav>
-  <div  style="height:240px;">
+  <div  style="background:white;height:240px;">
       <br><br>
       <h3 class="center" style="position: relative;top:40px;font-family: bledug;"><span style="background:#ffb300;padding:5px 20px 5px 20px;">SPORTS 360</span></h3>
       <br><br>
   </div>
   <div class="center">
-      <h4>Make Your Enquires</h4>
-      <p>contact us today and get reply in 24 hours</p>
+      <h4>Feedback</h4>
+      <p>We would like your feedback to improve our business.</p>
+      <br>
+      <p>What is your opinion of Sports360?</p>
+      <div><img data-value="1" class="smiley" style="width:50px;padding: 4px;" src="sad.png"><img data-value="2" class="smiley" style="width:50px;padding: 4px;" src="meh.png"><img data-value="3" class="smiley" style="width:50px;padding: 4px;" src="smile.png"><img data-value="4" class="smiley" style="width:50px;padding: 4px;" src="happy.png"></div>
+      <div class="divider"></div>
       <div>
-      <input  class="input browser-default" placeholder="name" type="text" style="margin-top:15px;font-family:Product;"/>
+            <p>Please select your feedback category below</p> 
+            
+            <div class="btn feedback" data-attr="1" style="background:#ffb300;width:150px;border-radius:0px;">Suggestion</div>
+            <div class="btn feedback" data-attr="2" style="background:#ffb300;width:220px;border-radius:0px;">Something is not right</div>
+            <div class="btn feedback" data-attr="3" style="background:#ffb300;width:150px;border-radius:0px;">Complaint</div>
+
       </div>
-      <div>
-        <input  class="input browser-default" placeholder="phone" type="text" style="margin-top:15px;font-family:Product;"/>
+      <div>      
+      <p>Enter your name</p>          
+      <input id="name" class="input browser-default" placeholder="name" type="text" style="margin-top:15px;font-family:Product;"/>
       </div>
-      <div>
-      <input  class="input browser-default" placeholder="email" type="email" style="margin-top:15px;font-family:Product;"/>
-      </div>
+      <p>Please leave your feedback below:</p>
       <textarea id="textarea1" placeholder="message" class="browser-default" style="margin-top:15px;font-family:Product;"></textarea>               
       <br>
-      <div class="btn" style="background:#ffb300;width:150px;border-radius:0px;">SEND</div>
-      
+      <div class="btn send" style="background:#ffb300;width:150px;border-radius:0px;">SEND</div>
+      <br><br>
+      <div id="error" style="display:none;"><span style="background:crimson;padding:2px 10px 2px 10px;"></span></div>
   </div>
   <br>    
   <footer class="page-footer black">
@@ -152,6 +161,53 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+   $(document).ready(function(){
+       var s = 0;
+       $('.smiley').click(function(){
+           $('.smiley').css("filter","none")
+           $(this).css("filter","invert(100%)");
+           //alert($(this).attr("data-value"))
+           s = $(this).attr("data-value")
+       })
+       
+       var f = 0;
+       $('.feedback').click(function(){
+           $('.feedback').css("color","white")
+           $('.feedback').css("background","#ffb300")
+           $(this).css("background","black");
+           $(this).css("color","#ffb300");
+           //alert($(this).attr("data-value"))
+           f = $(this).attr("data-attr")
+       })
+       $('.send').click(function(){
+           if(s != 0)
+           {
+              if(f !=0)
+              {
+                if($('#textarea1').val().trim().length > 0)
+                {
 
+                }
+                else
+                {
+                    $('#error span').text("NO MESSAGE");
+                    $('#error').css("display","block");
+                }
+              }
+              else
+              {
+                $('#error span').text("SELECT CATEGORY");
+                $('#error').css("display","block");
+              }
+           }
+           else
+           {
+              $('#error span').text("SELECT OPINION");
+              $('#error').css("display","block");
+           }
+       })
+   })
+  </script>
   </body>
 </html>
